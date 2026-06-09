@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Management Portal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .hero-section {
+        background: linear-gradient(135deg, #0d6efd 0%, #6c63ff 100%);
+        color: #fff;
+      }
+      .hero-section .card {
+        background: rgba(255, 255, 255, 0.12);
+        border: none;
+      }
+      .feature-card img {
+        height: 180px;
+        object-fit: cover;
+      }
+      .footer-links a {
+        color: #adb5bd;
+        text-decoration: none;
+      }
+      .footer-links a:hover {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky-top bg-white shadow-sm">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Cvrh.ibp.jpg" alt="College campus" class="w-50 h-50 object-fit-cover" />
+              </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMenu"
+            aria-controls="navMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="userMenu">
+                  <li><a class="dropdown-item" href="registration.html">Student Registration</a></li>
+                  <li><a class="dropdown-item" href="dashboard.html">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="contact.html">Support</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="d-flex ms-lg-3">
+              <a class="btn btn-outline-primary me-2" href="login.html">Login</a>
+              <a class="btn btn-primary" href="registration.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="flex-grow-1">
+      <section id="home" class="hero-section py-5">
+        <div class="container">
+          <div class="row align-items-center gy-4">
+            <div class="col-lg-6 text-center text-lg-start">
+              <span class="badge bg-light text-primary mb-3">Student Management Portal</span>
+              <h1 class="display-5 fw-bold">Welcome to Your College Student Hub</h1>
+              <p >
+                The Cherabuddi Education Society was registered in January 1999 as an NRI-promoted society. The Society  aims at creating a state-of-the-art engineering institution in association with leading NRI technology professionals and well-known academicians of the twin states of Telangana & Andhra Pradesh.  The Society aims to harness technical excellence with a commitment to the ethos of 'useful learning
+              </p>
+              <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                <a href="registration.html" class="btn btn-light btn-lg text-primary">Register Now</a>
+              </div>
+            </div>
+            <img src="https://campuspro.co.in/collage-image/1751978655_row_113.jpg" alt="College campus" class="fluid w-50 h-50 object-fit-cover" />
+          </div>
+        </div>
+      </section>
+
+
+      <section id="features" class="py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <p class="text-uppercase text-primary mb-2">Key Services</p>
+            <h2 class="fw-bold">Portal Features</h2>
+            <p class="text-muted mx-auto" style="max-width: 680px;">
+              Discover the core modules that make student management simple and efficient.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Student registration" />
+                <div class="card-body">
+                  <h5 class="card-title">Student Registration</h5>
+                  <p class="card-text text-muted">Fast and secure student onboarding with form validation and profile creation for new admissions.</p>
+                  <a href="#registration" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Attendance management" />
+                <div class="card-body">
+                  <h5 class="card-title">Attendance Management</h5>
+                  <p class="card-text text-muted">Monitor daily attendance, track student participation, and generate summary reports with ease.</p>
+                  <a href="#dashboard" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="card feature-card h-100 shadow-sm">
+                <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Results management" />
+                <div class="card-body">
+                  <h5 class="card-title">Results Management</h5>
+                  <p class="card-text text-muted">View exam scores, manage gradebooks, and share performance feedback with students and parents.</p>
+                  <a href="#dashboard" class="btn btn-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-6">
+            <p class="mb-0">&copy; CVR college. All rights reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end footer-links">
+            <a href="https://www.instagram.com/cvr_community" class="me-3">Facebook</a>
+            <a href="https://in.linkedin.com/school/cvrcoe/" class="me-3">Twitter</a>
+            <a href="https://in.linkedin.com/school/cvrcoe/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>  </body>
+</html>
